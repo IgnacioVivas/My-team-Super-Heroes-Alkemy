@@ -4,10 +4,13 @@ import Search from './Search'
 import FloatingBtn from './FloatingBtn'
 import { Redirect } from 'react-router-dom'
 import { useLoginContext } from '../context/LoginContext'
+import { useHeroContext } from '../context/HeroContext'
+
 
 function Home() {
 
     const { isAuthorized } = useLoginContext();
+    const { team } = useHeroContext();
 
     if (!isAuthorized) {
         return <Redirect to='/login' />;
@@ -19,7 +22,13 @@ function Home() {
                 <div className="row">
                     <div className="col-12">
                         <h1>Super Hero</h1>
-                        <span className='span-title'>Aún no tienes equipo, empieza a buscar y a añadir un héroe.</span>
+                        {
+                            team.length === 0 ?
+                                <span className='span-title'>You don't have a team yet, start searching and adding a hero.</span>
+                                :
+                                <span className='span-title'>Keep adding heroes to complete your team with six.</span>
+
+                        }
                     </div>
                 </div>
                 <Search></Search>

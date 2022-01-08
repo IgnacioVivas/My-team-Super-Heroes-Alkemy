@@ -15,9 +15,8 @@ function HeroContextProvider({ children }) {
     function addToTeam(hero) {
         if (team.length < 6) {
             if (isInTeam(hero.id)) {
-                alert("no se pueden agregar");
+                alert("no se pueden agregar al equipo");
             } else {
-                console.log(arrayGoodHeroes);
                 if (hero.biography.alignment === "good") {
                     verifyGoodHeroes(hero)
                 } else if (hero.biography.alignment === "bad") {
@@ -47,7 +46,7 @@ function HeroContextProvider({ children }) {
         if (arrayGoodHeroes.length < 3) {
             setTeam([...team, hero]);
         } else {
-            console.log("no puedes tener mas personajes buenos");
+            alert("no puedes tener mas personajes buenos");
         }
     }
 
@@ -55,7 +54,7 @@ function HeroContextProvider({ children }) {
         if (arrayBadHeroes.length < 3) {
             setTeam([...team, hero]);
         } else {
-            console.log("no puedes tener mas personajes malos");
+            alert("no puedes tener mas personajes malos");
         }
     }
 

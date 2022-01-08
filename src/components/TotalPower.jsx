@@ -14,8 +14,8 @@ function TotalPower({ orderPowers, promedioAltura, promedioPeso }) {
                     {orderPowers && orderPowers.map((power, key) => <span key={key}> {power.name}:  %{power.value}</span> )}
                 </div>
                 <div className="col-12 alturaPeso">
-                    <span>altura promedio: {promedioAltura}cm</span>
-                    <span>peso promedio: {promedioPeso}kg</span>
+                    <span>average height: {promedioAltura}cm</span>
+                    <span>average weight: {promedioPeso}kg</span>
                 </div>
             </div>
         </div>

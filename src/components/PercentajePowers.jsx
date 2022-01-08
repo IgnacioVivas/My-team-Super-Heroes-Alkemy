@@ -19,7 +19,6 @@ function PercentajePowers() {
     let valorAlturaPeso= [];
 
 
-    console.log(team);
 
     for (let i = 0; i < team.length; i++) {
         if (team[i].appearance.height[1] !== "null") {
@@ -29,7 +28,6 @@ function PercentajePowers() {
         }
     }
     promedioAltura = Math.round(valorAlturaPeso.reduce((a, b) => a + b, 0) / valorAlturaPeso.length);
-    console.log(promedioAltura);
 
 
     for (let i = 0; i < team.length; i++) {
@@ -40,7 +38,6 @@ function PercentajePowers() {
         }
     }
     promedioPeso = Math.round(valorAlturaPeso.reduce((a, b) => a + b, 0) / valorAlturaPeso.length);
-    console.log(promedioPeso);
 
 
 
@@ -52,7 +49,6 @@ function PercentajePowers() {
         }
     }
     promedioCombat = Math.round(valores.reduce((a, b) => a + b, 0) / valores.length);
-    console.log(promedioCombat);
 
 
     for (let i = 0; i < team.length; i++) {
@@ -63,7 +59,6 @@ function PercentajePowers() {
         }
     }
     promedioDurability = Math.round(valores.reduce((a, b) => a + b, 0) / valores.length);
-    console.log(promedioDurability);
 
 
     for (let i = 0; i < team.length; i++) {
@@ -74,7 +69,6 @@ function PercentajePowers() {
         }
     }
     promedioIntelligence = Math.round(valores.reduce((a, b) => a + b, 0) / valores.length);
-    console.log(promedioIntelligence);
 
 
     for (let i = 0; i < team.length; i++) {
@@ -85,7 +79,6 @@ function PercentajePowers() {
         }
     }
     promedioPower = Math.round(valores.reduce((a, b) => a + b, 0) / valores.length);
-    console.log(promedioPower);
 
 
     for (let i = 0; i < team.length; i++) {
@@ -96,7 +89,6 @@ function PercentajePowers() {
         }
     }
     promedioSpeed = Math.round(valores.reduce((a, b) => a + b, 0) / valores.length);
-    console.log(promedioSpeed);
 
 
     for (let i = 0; i < team.length; i++) {
@@ -107,7 +99,6 @@ function PercentajePowers() {
         }
     }
     promedioStrength = Math.round(valores.reduce((a, b) => a + b, 0) / valores.length);
-    console.log(promedioStrength);
 
     const combat = {
         name: "Combat",

@@ -1,0 +1,16 @@
+
+
+.hero-list{
+    margin-top: 250px;
+    padding: 0 50px ;    
+    .list{
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .hero-list{
+        margin-top: 100px;
+    }
+}

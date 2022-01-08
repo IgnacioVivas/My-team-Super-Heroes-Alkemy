@@ -1,0 +1,59 @@
+
+
+.card-team{
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    justify-self: center;
+    padding: 0 !important;
+    .cont-img-card-team{
+        img{
+               width: 100%;    
+        }
+    }
+    .cont-name-card-team{
+        border-bottom: 1px solid;
+        h3{
+            font-family: $fontMain;
+            padding-top: 15px;
+        }
+        p{
+            font-family: $fontSecond;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+    .cont-powerstats-team{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 0;
+        .powerstats-team{
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+            span{
+               font-family: $fontSecond;
+               text-transform: uppercase;
+               letter-spacing: 3px;
+            }
+        }
+    }
+    .cont-btn-card-team{
+       padding-bottom: 20px;
+        button{
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-family: $fontMain;
+            font-size: 20px;
+            letter-spacing: 2px;
+        &:hover {
+            background-color: #220000;
+            color: white; 
+        }
+        }
+    }
+}
+

@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom'
 import CardTeam from './CardTeam'
 import PercentajePowers from './PercentajePowers'
 import HeroDetail from './HeroDetail'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 
 function MyTeam() {
 
     const { team, viewMyTeam, setViewMyTeam } = useHeroContext()
-    console.log(team);
 
 
 
@@ -17,7 +16,6 @@ function MyTeam() {
 
         if (team.length === 0) {
             setViewMyTeam(false)
-            console.log("entro al if");
         } else {
             setViewMyTeam(true)
         }

@@ -36,7 +36,7 @@ function Search() {
                         behavior: 'smooth'
                     })
                 } else {
-                    alert("no se encontre ningun resultado en la busqueda")
+                    alert("no se encontro ningun resultado en la busqueda")
                 }
             })
             .catch((error) => {
@@ -44,7 +44,6 @@ function Search() {
             })
             .finally(() => setLoanding(false))
 
-        console.log(valorBusqueda);
     }
 
 
@@ -53,7 +52,7 @@ function Search() {
             <div className="row cont-search">
                 <div className="col-12">
                     <form className="d-flex flex-column align-items-center" id='formSearch' onSubmit={handleSubmit}>
-                        <input className="me-2" type="search" placeholder="Buscar equipo" aria-label="Search" onChange={handleChange} />
+                        <input className="me-2" type="search" placeholder="search team" aria-label="Search" onChange={handleChange} />
                         <button className="" type="submit">
                             {
                                 loading ?

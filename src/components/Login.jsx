@@ -50,7 +50,6 @@ function Login() {
                             axios
                                 .post('http://challenge-react.alkemy.org/', valores)
                                 .then((resp) => {
-                                    console.log(resp);
                                     evaluateAuthorization(true)
                                     history.push('/home')
                                     localStorage.setItem("Token", resp.data.token);
@@ -105,7 +104,6 @@ function Login() {
                                                 
                                         }
                                     </button>
-                                    {formEnviado && <p>exito!</p>}
                                 </div>
 
                             </Form>

@@ -1,0 +1,67 @@
+
+
+
+.cont-login{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .row{
+        .login{
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            form{
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                div{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 5px;
+                    .label-login{
+                        font-family: $fontSecond !important;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    .error-login{
+                        color: red;
+                        font-family: $fontSecond;
+                        font-weight: 400;
+                        font-size: 15px;
+                        background-color: rgba(255, 255, 255, 0.322);
+                        padding: 0 20px;
+                        border-radius: 3px;
+                    }
+                }
+                input{
+                    width: 100%;
+                    border: none;
+                    padding: 10px 20px;
+                }
+                button{
+                    width: 156px;
+                    align-self: center;
+                    color: white !important;
+                    background-color: #b5b5b5 !important;
+                    font-family: 'Sigmar One', sans-serif;
+                    font-size: 25px;
+                    letter-spacing: 3px;
+                    padding: 10px 25px;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 2px 2px 2px grey;
+                    &:hover {
+                        background-color: #220000 !important;
+                        color: #E74532 !important; 
+                    }
+                   
+                }
+            }
+        }
+    }
+}
